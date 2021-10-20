@@ -300,7 +300,18 @@
         </p>
 
         <p>
-            A <strong>binary tree </strong>is a data structure composed of <strong>nodes</strong>. One node is designated as the <strong>root node</strong>. Each node can reference (point to) zero, one, or two other nodes, which are called its <strong>children</strong>. The children are referred to as the <strong>left child</strong> and/or the <strong>right child</strong>. All nodes are reachable (by one or more steps) from the root node, and there are no cycles. For our purposes, although this is not part of the definition of a binary tree, we will say that a node might or might not be a goal node, and will contain its name. The first example in this paper (which we repeat here) shows a binary tree.
+            A <strong>
+                binary tree 
+            </strong>
+            is a data structure composed of 
+            <strong>
+                nodes
+            </strong>. 
+            One node is designated as the 
+            <strong>
+                root node
+            </strong>. 
+            Each node can reference (point to) zero, one, or two other nodes, which are called its <strong>children</strong>. The children are referred to as the <strong>left child</strong> and/or the <strong>right child</strong>. All nodes are reachable (by one or more steps) from the root node, and there are no cycles. For our purposes, although this is not part of the definition of a binary tree, we will say that a node might or might not be a goal node, and will contain its name. The first example in this paper (which we repeat here) shows a binary tree.
         </p>
 
         <center>
@@ -387,7 +398,7 @@
 
         <p>
             Here's what the numbered lines are doing:
-
+        </p>
         <ol>
             <li>If we are given a null node, it's not solvable. This statement is so that we can call this method with the children of a node, without first checking whether those children actually exist.
             </li>
@@ -426,16 +437,16 @@
                 </font> itself is not solvable.
             </li>
         </ol>
-        </p>
-
-        <li>
+        
+    
+       <p>
             This program runs correctly and produces the unenlightening result 
             <font size="4" color="#660000">
                 true
             </font>.
-        </li>
+        </p>
 
-        <li>
+        <p>
             Each time we ask for another node, we have to check if it is 
             <font size="4" color="#660000">
                 null
@@ -445,7 +456,7 @@
                 solvable
             </font>. 
             An alternative would be to check first whether each child exists, and recur only if they do. Here's that alternative version:
-        </li>
+        </p>
 
         <font size="4" color="#660000">
             <pre>
